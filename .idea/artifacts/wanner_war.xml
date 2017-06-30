@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="wanner:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="wanner-web.war">
+      <element id="artifact" artifact-name="wanner:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,6 @@
+你可能搞错了IO和NIO之间的区别，最基本的一点是
+IO是面向流的，
+NIO面向缓冲区的，
+而你的代码很明显是使用了BufferedReader以及InputStreamReader流，
+如果使用nio，readLine根本不能读取，NIO只能读取缓冲区，扫描缓冲区的大小，并且在解析数据时，比起阻塞IO流，
+NIO需要付出更大的代价。
